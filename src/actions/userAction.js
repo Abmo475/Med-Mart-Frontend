@@ -37,6 +37,8 @@ import {
     ALL_USERS_REQUEST,
 } from '../constants/userConstants';
 import axios from 'axios';
+import { URL } from '../App';
+
 
 // Login User
 export const loginUser = (email, password) => async (dispatch) => {
@@ -51,7 +53,7 @@ export const loginUser = (email, password) => async (dispatch) => {
         }
 
         const { data } = await axios.post(
-            '/api/v1/login',
+            `${URL}/api/v1/login`,
             { email, password },
             config
         );

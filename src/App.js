@@ -37,6 +37,7 @@ import ReviewsTable from './components/Admin/ReviewsTable';
 import Wishlist from './components/Wishlist/Wishlist';
 import NotFound from './components/NotFound';
 
+  export const URL = process.env.REACT_APP_SERVER_URL;
 function App() {
 
   const dispatch = useDispatch();

@@ -1,9 +1,10 @@
 import axios from "axios";
+import { URL } from "../App";
 import { ADD_TO_WISHLIST, REMOVE_FROM_WISHLIST } from "../constants/wishlistConstants";
 
 // Add To Wishlist
 export const addToWishlist = (id) => async (dispatch, getState) => {
-    const { data } = await axios.get(`/api/v1/product/${id}`);
+    const { data } = await axios.get(`${URL}/api/v1/product/${id}`);
 
     dispatch({
         type: ADD_TO_WISHLIST,

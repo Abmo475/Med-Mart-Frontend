@@ -1,4 +1,4 @@
-import notFound from 'https://asset.cloudinary.com/da8hdfiix/8c4d4888858133a6bd8cc65b584f2549';
+import notFound from '../assets/images/404-not-found.svg';
 import { Link } from 'react-router-dom';
 
 const NotFound = () => {

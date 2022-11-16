@@ -2,7 +2,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Searchbar from './Searchbar';
-import logo from 'https://res.cloudinary.com/da8hdfiix/image/upload/v1668591051/logo_vr7pis.png';
+import applogo from '../../../assets/images/logo.png';
 import PrimaryDropDownMenu from './PrimaryDropDownMenu';
 import SecondaryDropDownMenu from './SecondaryDropDownMenu';
 import { useState } from 'react';
@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
 
-    <header className="bg-primary-orange fixed top-0 py-2.5 w-full z-10">
+    <header className="bg-primary-blue fixed top-0 py-2.5 w-full z-10">
 
       {/* <!-- navbar container --> */}
       <div className="w-full sm:w-9/12 px-1 sm:px-4 m-auto flex justify-between items-center relative">
@@ -28,7 +28,7 @@ const Header = () => {
         {/* <!-- logo & search container --> */}
         <div className="flex items-center flex-1">
           <Link className="h-7 mr-1 sm:mr-4" to="/">
-            <img draggable="false" className="h-full w-full object-contain" src={"https://res.cloudinary.com/da8hdfiix/image/upload/v1668591051/logo_vr7pis.png"} alt="Flipkart Logo" />
+            <img draggable="false" className="h-full w-full object-contain" src={applogo} alt="Flipkart Logo" />
           </Link>
 
           <Searchbar />

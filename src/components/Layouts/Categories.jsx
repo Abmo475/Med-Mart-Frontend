@@ -11,39 +11,40 @@ import { Link } from 'react-router-dom';
 
 const catNav = [
     {
-        name: "Mobiles",
+        name: "Medical ICU",
+        icon: appliances,
+    },
+    {
+        name: "Imaging",
         icon: mobiles,
     },
     {
-        name: "Fashion",
+        name: "Trauma",
         icon: fashion,
     },
     {
-        name: "Electronics",
+        name: "Anesthesia",
         icon: electronics,
     },
     {
-        name: "Home",
+        name: "Dermatology",
         icon: home,
     },
     {
-        name: "Travel",
+        name: "Gynecology",
         icon: travel,
     },
-    {
-        name: "Appliances",
-        icon: appliances,
-    },
+   
     {
         name: "Furniture",
         icon: furniture,
     },
     {
-        name: "Beauty,Toys & more",
+        name: "Dental",
         icon: beauty,
     },
     {
-        name: "Grocery",
+        name: "pharmaceuticals",
         icon: grocery,
     },
 ]

@@ -4,7 +4,6 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Searchbar from './Searchbar';
 import logo from '../../../assets/images/logo.png';
 import PrimaryDropDownMenu from './PrimaryDropDownMenu';
-import SecondaryDropDownMenu from './SecondaryDropDownMenu';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -40,24 +39,24 @@ const Header = () => {
         {/* <!-- logo & search container --> */}
 
         {/* <!-- right navs --> */}
-        <span className="moreDropDown hidden sm:flex px-3 items-center text-white font-medium gap-1 cursor-pointer">Bidding
+        <span className="moreDropDown hidden sm:flex px-3 items-center text-xl text-white font-black gap-1 cursor-pointer">Bidding
         <span><ReceiptIcon /></span>
         </span>
-        <span className="moreDropDown hidden  sm:flex px-3 items-center text-white font-medium gap-1 cursor-pointer">
+        <span className="moreDropDown hidden text-xl sm:flex px-3 items-center text-white font-medium gap-1 cursor-pointer">
           Importers
           <span><ImportExportIcon /></span>
           </span>
      
         
-        <span className="moreDropDown hidden sm:flex px-3 items-center text-white font-medium gap-2 cursor-pointer">
+        <span className="moreDropDown text-xl hidden sm:flex px-3 items-center text-white font-medium gap-2 cursor-pointer">
           Products
             <span><InventoryIcon sx={{ fontSize: "16px" }} /> </span>
           </span>
-          <span className="moreDropDown hidden sm:flex px-3 items-center text-white font-medium gap-2 cursor-pointer">
+          <span className="moreDropDown text-xl hidden sm:flex px-3 items-center text-white font-medium gap-2 cursor-pointer">
           clique
             <span><Groups3Icon sx={{ fontSize: "22px" }} /> </span>
           </span>
-        <div className="flex items-center  px-3  justify-between ml-1 sm:ml-0 gap-0.5 sm:gap-7 relative">
+        <div className="flex items-center text-xl  px-3  justify-between ml-1 sm:ml-0 gap-0.5 sm:gap-7 relative">
 
 
           <Link to="/cart" className="flex items-center text-white font-medium gap-2 relative">
@@ -71,7 +70,7 @@ const Header = () => {
           </Link>
         </div>
         {isAuthenticated === false ?
-            <Link to="/login" className="px-3 sm:px-9 py-0.5 text-white  font-medium rounded-sm cursor-pointer">Login</Link>
+            <Link to="/login" className="px-3 text-xl sm:px-9 py-0.5 text-white  font-medium rounded-sm cursor-pointer">Login</Link>
             :
             (
               <span className="userDropDown flex items-center text-white font-medium gap-1 cursor-pointer" onClick={() => setTogglePrimaryDropDown(!togglePrimaryDropDown)}>{user.name && user.name.split(" ", 1)}
